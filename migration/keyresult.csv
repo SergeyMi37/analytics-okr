@@ -1,0 +1,8 @@
+﻿KeyResultSequence;Name;Description;Formula;UpdateFrequency;BaselineValue;TargetValue;FinalValue;ProgressPercent;Objective
+KR 1.1;Get 2000 new DC members on chinese DC channel;Get 2000 new DC members on chinese DC channel;None;Month;500;2000;1000;50;1
+KR 1.2;Get 1000 new DC members on brazilian DC channel;Get 1000 new DC members on brazilian DC channel;None;Month;250;1000;800;80;1
+KR 1.3;Get 1000 new indications from active DC members;Get 1000 new indications from active DC members;None;Month;100;1000;500;50;1
+KR 2.1;Promote 3 application contests in the next 6 months;Promote 3 application contests in the next 6 months;None;Month;0;3;3;100;2
+KR 2.2;Distribute 100 application developer badges in the next 6 months;Distribute 100 application developer badges in the next 6 months;None;Month;10;100;80;80;2
+KR 3.1;Promote 3 tech article contests in the next 6 months;Promote 3 tech article contests in the next 6 months;None;Month;0;3;3;100;3
+KR 3.2;Distribute 200 developer writer badges in the next 6 months;Distribute 200 developer writer badges in the next 6 months;None;Month;20;200;160;80;3
