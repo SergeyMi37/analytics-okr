@@ -12,6 +12,9 @@
     set file="https://raw.githubusercontent.com/yurimarx/analytics-okr/master/migration/objective.csv"
     zw ##class(community.csvgen).GenerateFromURL(file,";","dc.irisbi.Objective")
 
+    set file2="https://raw.githubusercontent.com/yurimarx/analytics-okr/master/migration/keyresult.csv"
+    zw ##class(community.csvgen).GenerateFromURL(file2,";","dc.irisbi.KeyResult")
+
     ;zpm "load /opt/irisapp/ -v"
     zpm "load /opt/irisapp/ -v -Dfolder=irisapp"
 
