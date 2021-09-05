@@ -9,6 +9,8 @@ Property KeyResultSequence As %VarString(MAXLEN = 10);
 
 Property Name As %VarString(MAXLEN = 300);
 
+Property SeqName As %String [ Calculated, SqlComputeCode = {set {*}={KeyResultSequence}_" - "_{Name}}, SqlComputed ];
+
 Property Description As %VarString(MAXLEN = "");
 
 Property Formula As %VarString(MAXLEN = "");

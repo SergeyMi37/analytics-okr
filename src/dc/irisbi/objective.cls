@@ -9,6 +9,8 @@ Property ObjectiveSequence As %VarString(MAXLEN = 10);
 
 Property Name As %VarString(MAXLEN = 300);
 
+Property SeqName As %String [ Calculated, SqlComputeCode = {set {*}={ObjectiveSequence}_" - "_{Name}}, SqlComputed ];
+
 Property Description As %VarString(MAXLEN = "");
 
 Property ProgressPercent As %Double;
@@ -26,9 +28,12 @@ Storage Default
 <Value>Name</Value>
 </Value>
 <Value name="4">
-<Value>Description</Value>
+<Value>SeqName</Value>
 </Value>
 <Value name="5">
+<Value>Description</Value>
+</Value>
+<Value name="6">
 <Value>ProgressPercent</Value>
 </Value>
 </Data>
