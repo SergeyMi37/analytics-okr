@@ -48,4 +48,12 @@ ClassMethod StopJournalling(db As %String) As %Status
   Return sc
 }
 
+ClassMethod RebuildIndexes() As %Status
+{
+  set sc = ##class(dc.irisbi.KeyResult).%BuildIndices($ListBuild("ObjectiveIndex"))
+  do ##class(%DeepSee.Utils).%BuildCube("OKRCube")
+    
+  Return sc
+}
+
 }

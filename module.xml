@@ -21,6 +21,8 @@
         <Invoke Class="dc.irisbi.OKRCube" Method="StopJournalling">
           <Arg>IRISAPP</Arg>
         </Invoke>
+        <Invoke Class="dc.irisbi.OKRCube" Method="RebuildIndexes">
+        </Invoke>
       </Invokes>
       <Parameter Name="folder" Value="irisapp" />
       <FileCopy Name="dsw/irisapp.json" Target="${cspdir}dsw/configs/${folder}.json"/>

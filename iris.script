@@ -13,7 +13,11 @@
     set file2="https://raw.githubusercontent.com/yurimarx/analytics-okr/master/migration/keyresult.csv"
     zw ##class(community.csvgen).GenerateFromURL(file2,";","dc.irisbi.KeyResult")
 
+    do ##class(dc.irisbi.KeyResult).%BuildIndices($ListBuild("ObjectiveIndex"))
+    
     zw ##class(%DeepSee.WizardUtils).%GenerateCubeDefinition("dc.irisbi.KeyResult","OKRCube","dc.irisbi.OKRCube",1)
+    do ##class(dc.irisbi.KeyResult).%BuildIndices($ListBuild("ObjectiveIndex"))
+    
     do ##class(%DeepSee.Utils).%BuildCube("OKRCube")
     do ##class(dev.code).export("*.DFI")
 
