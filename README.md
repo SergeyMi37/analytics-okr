@@ -24,6 +24,7 @@ $ git clone https://github.com/yurimarx/analytics-okr.git
 Open the terminal in this directory and run:
 
 ```
+$ docker-compose build
 $ docker-compose up -d
 ```
 and open then http://localhost:32792/dsw/index.html#/IRISAPP
