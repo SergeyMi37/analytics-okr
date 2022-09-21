@@ -1,4 +1,6 @@
 # analytics-okr
+ [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Fanalytics-okr&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Fanalytics-okr) 
+ 
 This is an OKR (https://en.wikipedia.org/wiki/OKR) Dashboard for InterSystems IRIS Analytics (DeepSee) solutions.
 
 OKR - Objective and Key Results is a strategic objectives management and execution system developed by Andrew Grove of Intel. It is a very effective tool, as it sets goals and key results that are focused and always based on numerical, clear and time-determined indicators.
